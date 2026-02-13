@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For My Love ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    text-align:center;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color:white;
+}
+
+.page{
+    display:none;
+    padding:20px;
+}
+
+.active{
+    display:block;
+}
+
+.box{
+    background: rgba(0,0,0,0.6);
+    padding:30px;
+    border-radius:20px;
+    max-width:800px;
+    margin:auto;
+    width:90%;
+}
+
+button{
+    padding:12px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    background:#ff4d6d;
+    color:white;
+    margin-top:20px;
+}
+
+button:hover{
+    background:#e60039;
+}
+</style>
+
+<script>
+function showPage(id){
+    var pages = document.getElementsByClassName("page");
+    for(var i=0;i<pages.length;i++){
+        pages[i].classList.remove("active");
+    }
+    document.getElementById(id).classList.add("active");
+}
+</script>
+
+</head>
+<body>
+
+<!-- START PAGE -->
+<div class="page active" id="start">
+    <div class="box">
+        <h1>For The Most Special Person 💖</h1>
+        <p>I made something special only for you...</p>
+        <button onclick="showPage('rose')">Click Here My Love ❤️</button>
+    </div>
+</div>
+
+<!-- ROSE DAY -->
+<div class="page" id="rose">
+    <div class="box">
+        <h1>🌹 Happy Rose Day 🌹</h1>
+        <p>
+        On this Rose Day, I want to give you not just a rose but my whole heart.
+        Just like a rose spreads fragrance everywhere, you spread happiness in my life.
+        Your presence makes everything brighter and more beautiful.
+        I promise to always cherish you, respect you, and love you endlessly.
+        </p>
+        <button onclick="showPage('chocolate')">Next ❤️</button>
+    </div>
+</div>
+
+<!-- CHOCOLATE DAY -->
+<div class="page" id="chocolate">
+    <div class="box">
+        <h1>🍫 Happy Chocolate Day 🍫</h1>
+        <p>
+        You are sweeter than any chocolate in this world.
+        Every moment with you feels soft, comforting, and full of warmth.
+        Just like chocolate melts slowly, my heart melts every time I see you smile.
+        I wish our love always remains sweet, pure, and forever strong.
+        </p>
+        <button onclick="showPage('propose')">Next ❤️</button>
+    </div>
+</div>
+
+<!-- PROPOSE DAY -->
+<div class="page" id="propose">
+    <div class="box">
+        <h1>💍 Happy Propose Day 💍</h1>
+        <p>
+        On this special day, I want to tell you that choosing you
+        was the best decision of my life.
+        I choose you today, tomorrow, and every day after that.
+        You are my comfort, my happiness, and my safe place.
+        I promise to always stand beside you through every up and down.
+        </p>
+        <button onclick="showPage('teddy')">Next ❤️</button>
+    </div>
+</div>
+
+<!-- TEDDY DAY -->
+<div class="page" id="teddy">
+    <div class="box">
+        <h1>🧸 Happy Teddy Day 🧸</h1>
+        <p>
+        If I could, I would send you the biggest teddy
+        filled with all my hugs and love.
+        Whenever you feel low, just remember
+        I am always here to hold you tight.
+        You are never alone, because you have my heart forever.
+        </p>
+        <button onclick="showPage('promise')">Next ❤️</button>
+    </div>
+</div>
+
+<!-- PROMISE DAY -->
+<div class="page" id="promise">
+    <div class="box">
+        <h1>🤝 Happy Promise Day 🤝</h1>
+        <p>
+        Today I promise to always respect you,
+        trust you, and support your dreams.
+        I promise to stay honest and loyal.
+        No matter what happens,
+        I will always choose you!
+        </p>
+        <button onclick="showPage('hug')">Next ❤️</button>
+    </div>
+</div>
+
+<!-- HUG DAY -->
+<div class="page" id="hug">
+    <div class="box">
+        <h1>🤗 Happy Hug Day 🤗</h1>
+        <p>
+        I wish I could hug you
+        but i am sending many hugs. 
+        </p>
+        <button onclick="showPage('kiss')">Next ❤️</button>
+    </div>
+</div>
+
+<!-- KISS DAY -->
+<div class="page" id="kiss">
+    <div class="box">
+        <h1>💋 Happy Kiss Day 💋</h1>
+        <p>
+        You make my heart race in the best way.
+        Your love is my favorite feeling wish i could kiss you haha
+        but i am delivering my kisses from here mwaahhhh.
+        </p>
+        <button onclick="showPage('valentine')">Next ❤️</button>
+    </div>
+</div>
+
+<!-- VALENTINE DAY -->
+<div class="page" id="valentine">
+    <div class="box">
+        <h1>❤️ Happy Valentine’s Day ❤️</h1>
+        <p>
+        Thank you for being in my life.
+        You are my best friend, my partner, and my happiness.
+        Life feels more beautiful because of you.
+        I love you more than words can explain,
+        today and forever loveyouuusoomuchhhh mwahhhh aur mai kn deri paise nai h.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
